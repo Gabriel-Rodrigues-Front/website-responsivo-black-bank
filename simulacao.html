@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+
+	<html>
+	  <head>
+	    
+	  	<!-- META TAGS --> 
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- CSS Bootstrap 4 --> 
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	    <!-- CSS Personalizado --> 
+	    <link rel="stylesheet" type="text/css" href="css-personalizado/estilo.css">
+
+	    <!-- Font awesome --> 
+	    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+
+	    <!-- JavaScript -->
+	    <script  src="js-externo/blackbank.js"></script>
+
+
+	    <title>Black Bank - Simulação de crédito</title>
+
+	  </head>
+
+	  <body>
+	  	
+	 <header id="capa"> <!-- Inicio do topo -->
+	   <div class="container">
+	     <div class="row" id="barra">
+	       <div  class=" col-md-6 "> <!-- Inicio container logo Black Bank -->
+	         <div id="logo">
+	         	<a href="index.html"><h4>Black</h4>
+	         	<h5>Bank</h5></a>       	
+	         </div>
+	       </div> <!-- Fim do container logo Black Bank -->
+	       <div id="menusuperior" class="col-md-6 d-flex align-item-center justify-content-end">	         
+	         <div id="redessociais" class="d-flex align-item-center">
+	           <div class="redeform">
+	             <a href=""><i class="fab fa-linkedin-in fa-lg"></i></a>
+	             <a href=""><i class="fab fa-instagram fa-lg"></i></a>
+	             <a href=""><i class="fab fa-facebook-f fa-lg"></i></a>
+	             <a href=""><i class="fab fa-twitter fa-lg"></i></a>	
+	            </div>  
+	            <div>
+	            	 <a id="acess" href="login.html">Acesse sua conta</a>
+	            </div>        
+	          </div>
+	       </div>
+	     </div>
+	     <button class="border" id="botaotoggler" onclick="abrirMenu()" type="toggler">Menu</button>
+	   </div>
+	 </header> <!-- Fim do topo -->
+
+	 <nav id="menu"> <!-- Menu Lateral -->
+	   <h5>Menu</h5>
+	   <div id="menubotoes">
+	     <a href="">Serviços</a>
+	     <a href="">Contato</a>
+	     <a href="">Sobre a empresa</a>	        
+	     <a href="simulacao.html">Simular crédito pessoal</a>      
+	    </div>
+	 </nav> <!-- Fim do menu lateral -->
+
+	 <section> <!-- Início da sessão de conteúdo --> 
+	   <div class="container" id="conteudo1">
+	     <div class="row container1">
+	       <div class=" col-lg-10 conteudos">
+	       	<h1 class="">Simule sem compromisso:</h1>
+	       	<h5>Aqui você pode simular seu pedido de crédito, totalmente sem compromisso, a fim de verificar os juros e outras possibilidades de acordo com seu perfil. </h5>
+	       	<div id="simulacao">
+	       	<form>
+	       	  <label>
+	       		<span><i class="fas fa-coins fa-md"></i>   Valor  (R$):</span><input id="valor" placeholder="R$ 0000" type="text" name="" onkeyup="capturarValor();">	
+	       		<span><i class="fas fa-money-check fa-md"></i>  Parcelas:</span><input id="parcela" onkeyup="capturarValor()"  placeholder="Quantidade Parcelas" type="text" name="">
+	       		<span><i class="fas fa-level-up-alt fa-md"></i>  Score:</span><input placeholder="Informe o Score" id="score" onkeyup="capturarValor()"  type="text" name="">
+	       		<span><i class="fas fa-dollar-sign fa-md"></i> Juros (R$):</span><input id="juros"  type="text" name="" disabled="">
+	       		<span><i class="fas fa-hand-holding-usd fa-md"></i>  Total a pagar (R$):</span><input id="totalapagar" type="text" name="" disabled="">
+	       		<span><i class="fas fa-money-check fa-md"></i> Valor da parcela (R$):</span><input id="valorparcela" type="text" name="" disabled="">
+	       	  </label>
+	      
+	       	</form>
+	       	  <a href="">Não sabe seu score? Consulte grátis no site do Serasa</a>
+	       	</div>
+	       	
+	       </div>	
+	     </div>
+	   </div>
+	 </section>   <!-- Fim da sessão de contéudo -->
+
+	 <footer> <!-- Início do Rodape -->
+	 	Todos os direitos reservados a Black Bank Copyright <br>
+	 	Gabriel Rodrigues &#169;
+	 </footer> <!-- Fim do rodape -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+	  </body>
+
+
+
+	  </html> 
