@@ -1,0 +1,596 @@
+/* FORMATAÇÕES GERAIS */ 
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/********************* Layout ******************/
+
+body, html {
+	height: 100%;
+
+}
+
+body {
+	background: url(../img/fachada-safra.jpg) center top no-repeat, black;
+	background-attachment: fixed;
+	background-size: 100% auto;
+
+}
+
+
+/************** TOPO *******************/
+
+#capa {
+	background-color: rgba(0,0,0,0.5);
+
+
+	
+}
+
+#barra {
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	height: 100px;
+
+}
+
+#logo {
+	display: inline-block;
+	background-color: black;
+	padding-top: 8px;
+	padding-left: 8px;	
+}
+
+#logo a:hover {
+	text-decoration: none;
+}
+#logo h4 {
+	color: #636363;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	padding: 0px 6px;
+	display: inline-block;
+	margin-right: 2px;
+	letter-spacing: 5px;
+	font-size: 1.7em;
+	background-color: white;
+	font-weight: 50;
+	
+}
+
+#logo h5 {
+	display: inline-block;
+	font-family: Verdana, sans-serif;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	font-size: 1.5em;
+	letter-spacing: 5px;
+
+
+}
+
+#menusuperior {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+#redessociais {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+}
+
+
+#acess {
+	text-decoration: none;
+	margin-top: 19px;
+	background-color: #262626;
+	border:none;
+	color: white;
+	padding: 2px 10px 5px 10px;
+}
+
+#acess:hover {
+	background-color: white;
+	color: black;
+	padding: 2px 10px 5px 10px;
+	transition: 0.5s;
+}
+
+
+
+
+#redessociais button:hover {
+	background:white;
+	color: black;
+	cursor: pointer;
+
+}
+
+
+
+.redeform a {
+	margin: 0px 10px;
+	padding: 4px 3px;
+	color: white;
+	border-radius: 5px;
+
+}
+
+.redeform a:hover {
+	background-color: white;
+	color: black;
+	padding: 4px 3px;
+	border-radius: 5px;
+	transition: 0.5s;
+	
+}
+
+.redeform {
+	display: flex;
+	justify-content:  center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+
+
+#botaotoggler {
+	float: right;
+	position: relative;
+	bottom: 80px;
+	padding: 5px 10px;
+	background-color: #262626;
+	color: white;
+	display: none;
+	font-size: 170%;
+
+}
+
+
+/******************* Formatação menu lateral ********************8*/
+
+#menu {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-left: 10px;
+	position: fixed;
+	z-index: 1000;
+	height: 500px;
+	justify-content: center;
+	
+
+
+}
+
+#menu h5 {
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+	padding: 5px;
+	font-weight: 80;
+	margin-bottom: 3px;
+}
+
+
+
+#menubotoes a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin-bottom: 1px;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.6);
+	font-weight: 80;
+
+}
+
+#menubotoes a:hover {
+	background-color: white;
+	color: black;
+	transition:0.5s;
+}
+
+
+
+/*************** CONTEUDO ******************/
+
+#conteudo1 {
+	background-color: rgba(0,0,0,0.6);
+	margin-top: 100px;
+}
+
+.container1 {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.conteudos {
+	background-color: #262626;
+	margin:20px;
+}
+
+.conteudos p, 
+.conteudos h5,
+.conteudos h1,
+.conteudos h4 {
+	color: white;
+	padding: 10px;
+	font-weight: 80;
+	
+}
+
+.conteudos h1 {
+	border-bottom: 1px solid white;
+	display: inline-block;
+}
+
+.conteudos a {
+	margin-left: 10px;
+	background-color: black;
+	color: white;
+	font-weight: 500;
+	padding: 15px;
+	text-decoration: none;
+
+}
+
+.conteudos a:hover {
+	background-color: white;
+	color: black;
+	transition: 0.5s;
+}
+
+
+/****** Botão Voltar da página de login *****/ 
+
+#voltar {
+	position: relative;
+	margin-left: auto;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+#voltar a {
+	padding: 10px;
+	background:#262626;
+	color: white;
+	text-decoration: none;
+
+}
+
+#voltar a:hover {
+	background:white;
+	color: black;
+	transition: 0.5s;
+}
+
+
+/****** RODAPÉ ***** */
+
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+background-color: rgba(0,0,0,0.6);
+height: 100px;
+text-align: center;
+color: white;
+position: absolute;
+width: 100%;
+
+ }
+
+
+
+ /****** Página de formularios *******/ 
+
+ #caixa {
+ 	display: flex;
+ 	flex-direction: column;	
+ 	justify-content: center;
+ 	align-items: center;
+ 	text-align: center;
+ 	padding:60px;
+ 	margin: 60px;
+
+ }
+
+
+#formulario {
+	font-size: 1.2em;
+
+}
+
+
+ #formulario h4 {
+ 
+ 	padding: 0;
+ }
+
+ #formulario form  {
+ 	
+ 	color: white;
+ 	margin:20px;
+
+
+ }
+
+#formulario input {
+	width: 130px;
+	height: 30px;
+	background-color: black;
+	border:none;
+	text-align: center;
+	color: white;
+	margin-bottom: 14px;
+}
+
+#formulario button {
+	display: block;
+	margin: auto;
+	width: 100%;
+	background-color: black;
+	border:none;
+	color: white;
+
+}
+
+#conta {
+	margin-left: 15px;
+}
+
+
+/* ****** PÁGINA DE SIMULAÇÃO ****** */
+
+
+#simulacao {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#simulacao a {
+	margin-top: 30px;
+	display: inline-block;
+}
+
+
+
+#simulacao span {
+	color: white;
+}
+
+#simulacao form {
+	text-align: center;
+}
+
+#simulacao input {
+	display: block;
+	width: 180px;
+	height: 30px;
+	background-color: black;
+	border:none;
+	text-align: center;
+	color: white;
+}
+
+#simulacao input:disabled {
+	background:grey;
+}
+
+
+
+
+
+@media (max-width: 1046.9px) { 
+ 	
+
+
+ 	body {
+ 		background-size: auto 100%;
+ 	}
+
+
+/* FORMATAÇÃO MENU LATERAL MOBILE */
+ 	#menu {	
+ 		position: relative;
+ 		margin-top: -30px;
+ 		display: none;
+ 		width: 100%;
+ 		margin-left: 0;
+ 		height: 100px;
+
+ 	}
+
+ 	#menu h5 {
+ 		font-size: 1.3em;
+ 	}
+
+ 	#menubotoes a {
+ 		display: inline-block;
+ 		text-align: center;
+ 		width: 100%;
+ 		
+ 	}
+
+/* FIM DA FORMATAÇÃO MENU LATERAL */
+ 	
+
+ 	#barra {
+ 		height: 185px;
+ 		display: flex;
+ 		flex-direction: column;
+ 		padding-top: 20px;
+ 		align-items: flex-start;
+
+
+ 		
+
+ 	}
+
+ 	#redessociais a i {
+ 		font-size: 1.5em;
+ 	}
+
+ 	#redessociais button {
+	
+	
+}
+
+ 	#menusuperior {
+ 		display: flex;
+ 		justify-content: flex-start !important;
+ 		
+
+
+ 	}
+
+ 	
+
+
+ 	#logo h4, #logo h5 {
+ 		font-size: 2em;
+ 	}
+
+ 
+ 	
+
+	#conteudo1 {
+		margin-top: 50px;
+	}
+	
+	 p {
+		font-size: 1.3em;
+	}
+
+	h1 {
+		font-size: 2.5em;
+
+	}
+
+	h5 {
+		font-size: 1.2em;
+	}
+
+	h4 {
+		font-size: 2.6em;
+	}
+
+	.conteudos a {
+		font-size: 1em;
+	}
+
+	a i {
+		font-size: 100%;
+	}
+
+	#botaotoggler {
+		display: inline-block;
+		font-size: 0.8em;
+		bottom: 35px;
+
+	}
+
+	#caixa {
+		padding: 0px;
+	}
+
+
+	#caixa h1 {
+		font-size: 1.5em;
+	}
+
+	#formulario {
+		font-size: 1em;
+	}
+
+
+	#formulario input {
+		width: 100px;
+		
+	}
+
+	#acess {
+		font-size: 1.1em;
+
+	}
+
+	footer {
+		position: absolute;
+		font-size: 1em;
+		height: 200px;
+		width: 100%;
+
+
+	}
+
+	
+ }
+
+
+
+@media (min-width: 1047px) and (max-width: 1155.9px) { 
+div.container {
+		margin-right: 100px;
+		max-width: 740px !important;
+	}
+
+
+	
+ }
+
+
+@media (min-width: 1156px) and (max-width: 1259.9px) { 
+.container {
+		margin-right: 100px;
+		max-width: 850px !important;
+	}
+}
+
+
+@media (min-width: 1260px) and (max-width: 1440.8px) { 
+.container {
+		margin-right: 100px;
+		max-width: 960px;
+	}
+ }
+
+ @media (min-width: 1440.9px) { 
+.container {
+		margin-right: 100px;
+		
+	}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
